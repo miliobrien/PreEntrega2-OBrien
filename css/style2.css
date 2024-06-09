@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajustado */
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 7.4375rem;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 11.9375rem;
+    height: 3.5625rem;
+}
+
+.navBar {
+    list-style: none;
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4.0625rem;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* bloque1 */
+.bloque1 {
+
+}
+.imagen1 img{
+    height: 100%;
+    width: 100%;    
+}
+.texto1 {
+    width: 29.4375rem;
+    height: 21.625rem;
+    display: flex;
+    position:absolute;
+    left: 438px;
+    top: 450px;
+    
+}
+.bloque1 h1 {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.boton {
+    width: 18.625rem;
+    height: 5.1875rem;
+    background-color: white;
+    border: solid 0.0625rem rgb(248, 98, 63);
+    border-radius: 2.1875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left: 68.75rem;
+    bottom: 18.75rem;
+
+}
+
+.boton a {
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: rgb(248, 98, 63);
+    text-decoration: none;
+}
+
+/* bloque2 */
+
+.bloque2 {
+    width: 100%;
+    height: 62.5rem;
+    background-image: url("../assets/patin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 6.25rem;
+}
+
+.bloque2 p {
+    width: 26.625rem;
+    height: 14.1875rem;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: -0.1875rem;
+    
+}
+
+/* bloque3 */
+.bloque3 {
+    width: 100%;
+    height: 55.8125rem;
+    background-image: url("../assets/fondoBloque3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem
+}
+
+
+.bloque3 h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+}
+
+.contenedorForm{
+    padding: 3.4375rem 5.5rem;
+    width: 73%;
+    border: solid 3px;
+    border-color: white;
+    border-radius: 2.1875rem;
+    background-color: azure;
+    background-color: rgba(255, 255, 255, 0%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 3.625rem;
+}
+
+
+.formGroup input {
+    outline: none;
+    padding: .9375rem;
+    border-radius: 1.5625rem;
+    border: solid 3px;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0%);
+    font-weight: 500;
+    font-size: 2.25rem;
+    font-family: Montserrat;
+    color: white;
+    width: 65.625rem;
+    
+}
+
+.consulta input{
+    height: 10rem;
+}
+
+.consulta ::placeholder{
+    display: flex;
+    position: relative;
+    bottom: 2.8125rem;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+
+.botonEnviar{
+    width: 32.625rem;
+    height: 69p;
+    background-color:rgb(248, 98, 63); ;
+    border-radius: 2.1875rem;
+    text-align: center;
+}
+
+.botonEnviar p{
+    padding: .9375rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 2.25rem;
+    color: white;
+}
+
+
+
+
+/* footer */
+
+
+
+footer {
+    width: 100%;
+    height: 15.9375rem;
+    padding:3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(22, 0, 109);
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes {
+display: flex;
+gap: .625rem;
+
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 59%);
+    position: relative;
+    top: 3.75rem
+}
+
+
+/* SERVICES */
+
+
+.services {
+    width: 100%;
+    background-image: url("../assets/fondoServices.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.services h1 {
+    padding-top: 8.5625rem;
+    padding-bottom: 5.6875rem;
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.articles{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    justify-items:center; 
+}
+
+.services article {
+    width: 37.1875rem;
+    height: 39.875rem;
+    margin: 25px;
+    border-radius: 3.9375rem;
+    background-color: white;
+}
+
+.socialMedia h2 {
+    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+    color: rgb(22, 0, 109);
+}
+
+.illustration h2 {
+    padding: 3.375rem 16.0625rem 11.4375rem 3.375rem;
+    font-weight: 600;
+    font-size: 4rem;
+    color: rgb(22, 0, 109);
+}
+
+.webDesign h2 {
+    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+    color: rgb(248, 98, 63);
+}
+
+.motionGraphics h2 {
+    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    color: rgb(248, 98, 63);
+}
+
+.services article ul {
+    font-weight: 300;
+    font-size: 2.25rem;
+    color: rgb(22, 0, 109);
+    list-style: none;
+    padding-left: 5.5625rem;
+}
+
+.services article ul li {
+    margin-bottom: 1.125rem;
+}
+
+/* WORK */
+
+
+.ourWork {
+    width: 100%;
+}
+
+.titulo {
+    background-image: url("../assets/fondoOurWork.png");
+    background-size: cover;
+    background-position: center;
+    padding: 7.8125rem 23.75rem;
+}
+
+.ourWork div h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.work {
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-areas: 
+"item1 item2"
+"item3 item4"
+"item5 item6"
+;
+
+
+}
+
+.foto1 {
+grid-area: item1;
+}
+
+.foto2{
+    grid-area: item2;
+}
+.foto3{
+    grid-area: item3;
+}
+.foto4{
+    grid-area: item4;
+}
+.foto5{
+    grid-area: item5;
+}
+.foto6{
+    grid-area: item6;
+}
+
+
+
+/* About */
+.whoWeAre {
+    width: 100%;
+    height: 55.6875rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/bloque1About.png");
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+
+}
+
+.textoAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    justify-content: center;
+    padding-top: 6.25rem
+
+}
+
+.whoWeAre h1 {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.whoWeAre p {
+    width: 39.4375rem;
+    height: 14.5625rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+.personas{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.personas div{
+    width: 100%;
+    padding: 3.125rem;
+    display: flex;
+}
+
+.fotoPerfil{
+justify-content: right;
+
+
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column; 
+    justify-content: left;
+    gap: 1.875rem;
+  
+}
+
+
+.personas h2{
+    font-weight: 700;
+    font-size: 6rem;
+    color: black;
+}
+
+.personas p{
+    width: 42.625rem;
+    height: 12.125rem;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.mauge h2{
+    color: white;
+}
+
+.mauge{
+    background-color: rgb(142, 89, 255);
+    color: white;
+}
+
+/* Contact */
+
+.contact{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/fondoBloque3.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.letsTalk h1{
+    font-weight: 700;
+    font-size: 6rem;
+    color: white;
+}
+
+.letsTalk p{
+    width: 51.625rem;
+    height: 12.3125rem;
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+}
+
+.letsTalk{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 8.75rem;
+gap: 3.875rem;
+}
+
+.mainContainer{
+display: flex;
+justify-content: center;
+
+
+}
+
+.contenedorForm2{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 3.4375rem 5.5rem;
+    border: solid 3px;
+    border-color: white;
+    border-radius: 2.1875rem;
+    background-color: azure;
+    background-color: rgba(255, 255, 255, 0%);
+}
+
+
+.formGroup2{
+    display: flex;
+    flex-direction: column;
+    gap: 3.625rem;
+}
+
+
+.formGroup2 input {
+    outline: none;
+    padding: .9375rem;
+    border-radius: 1.5625rem;
+    border: solid 3px;
+    border-color: white;
+    background-color: rgba(255, 255, 255, 0%);
+    font-weight: 500;
+    font-size: 2.25rem;
+    font-family: Montserrat;
+    color: white;
+    width: 65.625rem;
+    
+}
+
+.consulta input{
+    height: 25rem
+}
+
+.consulta ::placeholder{
+    display: flex;
+    position: relative;
+    bottom: 9.375rem;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+}
+
+
+.botonEnviar2{
+    width: 26.25rem;
+    height: 4.3125rem;
+    background-color:rgb(248, 98, 63); ;
+    border-radius: 2.1875rem;
+    margin-top: 4rem;
+    margin-bottom: 12.5rem;
+}
+
+.botonEnviar2 p{
+    padding: .8125rem;
+    font-weight: 500;
+    font-size: 2.25rem;
+    color: white;
+    text-align: center;
+}

@@ -45,21 +45,50 @@ header {
     color: black;
 }
 
+.navBar li a:hover{
+    color: rgb(248, 98, 63) ;
+}
+
 /* bloque1 */
-.bloque1 {
+
+.textoBloque1{
+    display: flex;
+    align-items: center;
+    gap: 6.25rem;
+}
+
+
+
+.bloque1{
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(3, 32vh);
+}
+.textoBloque1{
+grid-column: 2/4;
+grid-row: 2/3;
+order: 2;
 
 }
+
+.imagen1{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    order: 1;
+}
+
+
+
 .imagen1 img{
     height: 100%;
     width: 100%;    
 }
 .texto1 {
-    width: 29.4375rem;
+    width: 25rem;
     height: 21.625rem;
-    display: flex;
-    position:absolute;
-    left: 438px;
-    top: 450px;
+
     
 }
 .bloque1 h1 {
@@ -68,17 +97,16 @@ header {
 }
 
 .boton {
-    width: 18.625rem;
-    height: 5.1875rem;
+    width: 20rem;
+    aspect-ratio: 4/ 1;
     background-color: white;
     border: solid 0.0625rem rgb(248, 98, 63);
     border-radius: 2.1875rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    left: 68.75rem;
-    bottom: 18.75rem;
+    
+
 
 }
 
@@ -87,22 +115,40 @@ header {
     font-size: 2.5rem;
     color: rgb(248, 98, 63);
     text-decoration: none;
+    padding: .625rem 3.125rem;
+    text-wrap: nowrap;
 }
+
+.boton:hover{
+    background-color: rgb(248, 98, 63);
+    border: solid 0.0625rem white;
+}
+
+.boton a:hover{
+    color: white;
+}
+
 
 /* bloque2 */
 
 .bloque2 {
+    padding-right: 6.25rem;
     width: 100%;
-    height: 62.5rem;
-    background-image: url("../assets/patin.png");
-    background-repeat: no-repeat;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: flex-end;
+    background-image: url("../assets/patin.png");
+    display:flex;
+    justify-content: right;
     align-items: center;
-    padding-right: 6.25rem;
+    gap: 6rem;
 }
+
+
+.imagen2{
+    height: 100%;
+}
+
 
 .bloque2 p {
     width: 26.625rem;
@@ -116,7 +162,6 @@ header {
 /* bloque3 */
 .bloque3 {
     width: 100%;
-    height: 55.8125rem;
     background-image: url("../assets/fondoBloque3.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,7 +170,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3.125rem
+    gap: 3.125rem;
+    padding: 3.125rem 0 ;
 }
 
 
@@ -137,7 +183,7 @@ header {
 
 .contenedorForm{
     padding: 3.4375rem 5.5rem;
-    width: 73%;
+    width: 70%;
     border: solid 3px;
     border-color: white;
     border-radius: 2.1875rem;
@@ -152,6 +198,7 @@ header {
 .formGroup{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3.625rem;
 }
 
@@ -167,7 +214,7 @@ header {
     font-size: 2.25rem;
     font-family: Montserrat;
     color: white;
-    width: 65.625rem;
+    width: 100%;
     
 }
 
@@ -247,12 +294,12 @@ gap: .625rem;
     background-image: url("../assets/fondoServices.png");
     background-size: cover;
     background-position: center;
+    padding: 5rem;
 }
 
 
 .services h1 {
-    padding-top: 8.5625rem;
-    padding-bottom: 5.6875rem;
+    padding-bottom: 5rem;
     font-weight: 600;
     font-size: 3rem;
     color: white;
@@ -339,38 +386,20 @@ gap: .625rem;
 
 .work {
 width: 100%;
-height: 100%;
-display: grid;
-grid-template-areas: 
-"item1 item2"
-"item3 item4"
-"item5 item6"
+display: flex;
+flex-direction: column;
 ;
-
-
-}
-
-.foto1 {
-grid-area: item1;
-}
-
-.foto2{
-    grid-area: item2;
-}
-.foto3{
-    grid-area: item3;
-}
-.foto4{
-    grid-area: item4;
-}
-.foto5{
-    grid-area: item5;
-}
-.foto6{
-    grid-area: item6;
 }
 
 
+.foto{
+    display: flex;
+    width: 100%;
+}    
+
+.foto img{
+     flex-grow: 1;
+}
 
 /* About */
 .whoWeAre {
@@ -431,7 +460,6 @@ justify-content: right;
     flex-direction: column; 
     justify-content: left;
     gap: 1.875rem;
-  
 }
 
 
@@ -477,8 +505,9 @@ justify-content: right;
 }
 
 .letsTalk p{
-    width: 51.625rem;
-    height: 12.3125rem;
+    width: 46.875rem;
+    height: 11.1875rem;
+    text-align: center;
     font-weight: 300;
     font-size: 2rem;
     color: white;
@@ -488,7 +517,7 @@ justify-content: right;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-top: 8.75rem;
+padding: 7.5rem;
 gap: 3.875rem;
 }
 
@@ -555,8 +584,7 @@ justify-content: center;
     height: 4.3125rem;
     background-color:rgb(248, 98, 63); ;
     border-radius: 2.1875rem;
-    margin-top: 4rem;
-    margin-bottom: 12.5rem;
+    margin: 4rem;
 }
 
 .botonEnviar2 p{
@@ -565,4 +593,51 @@ justify-content: center;
     font-size: 2.25rem;
     color: white;
     text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1024px){
+    
+    .textoBloque1{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 3.75rem;
+    }
+    
+    .boton{
+        position: relative;
+        right: 2rem;
+    }
+    .bloque1 h1 {
+        font-weight: 700;
+        font-size: 5rem;
+
+        }
+    
+        
+        .bloque2{
+            background-image: url("../assets/patinResponsive.png");
+            justify-content: center;
+            padding: 0rem;
+        }
+        
+        .bloque2 p {
+            text-align: center;
+            color: white;
+            position: relative;
+            top: 20rem;
+            
+        }
+
+
+
+        }
+
+
+
+
 }

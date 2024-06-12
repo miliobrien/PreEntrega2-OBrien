@@ -29,9 +29,6 @@ header {
     height: 3.5625rem;
 }
 
-.navBar {
-
-}
 
 .nav-item{
     font-weight: 300;
@@ -52,6 +49,9 @@ header {
     display: flex;
     align-items: center;
     gap: 6.25rem;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    order: 2;
 }
 
 
@@ -62,11 +62,6 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(3, 32vh);
-}
-.textoBloque1{
-grid-column: 2/4;
-grid-row: 2/3;
-order: 2;
 
 }
 
@@ -237,6 +232,7 @@ order: 2;
     background-color:rgb(248, 98, 63); ;
     border-radius: 2.1875rem;
     text-align: center;
+    align-items: center;
 }
 
 .botonEnviar p{
@@ -267,6 +263,7 @@ footer {
 .footer1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .redes {
@@ -560,22 +557,6 @@ justify-content: center;
     
 }
 
-.consulta input{
-    height: 25rem
-}
-
-.consulta ::placeholder{
-    display: flex;
-    position: relative;
-    bottom: 9.375rem;
-}
-
-::placeholder {
-    color: white;
-    opacity: 1; 
-}
-
-
 .botonEnviar2{
     width: 26.25rem;
     height: 4.3125rem;
@@ -635,11 +616,142 @@ justify-content: center;
             
         }
 
+        }
+
+        @media (max-width: 768px){
+        /* INDEX */
+        header{
+        padding: .3125rem;
+        }
+        
+        
+        .formGroup input {
+                font-size: 1.75rem;
+
 
 
         }
+    }
 
 
 
+    @media (max-width: 376px){
+  
+      /* INDEX */
+      
+    .textoBloque1{
+        gap: 3.25rem;
+    }
+    
+    .texto1 {
+        width: 9.875rem;
+        height: 7.3125rem;
+    }
 
-}
+    .bloque1 h1 {
+        font-size: 2.25rem;
+    }
+    
+    .boton {
+        width: 10rem; 
+        right:0px;
+
+    }
+    
+    .boton a {
+        font-size: 1rem;
+        padding: .3125rem 1.5625rem;
+    }
+    
+    .bloque2{
+        height: 90vh;
+    }
+    
+    .textoBloque2 p{
+    font-size: 1.5625rem;
+    }
+
+    .bloque2 p {
+        width: 15.625rem;
+        height: 6.5625rem;
+        letter-spacing: -0.0625rem;
+        top: 11rem;
+    }
+    
+
+    .bloque3 h2{
+        font-size: 1.125rem;
+    }
+
+    .contenedorForm{
+        padding: 1.5625rem 2.75rem;
+        width: 90%;
+        border: solid .0625rem;
+        border-color: white;
+    }
+    .formGroup{
+        gap: 1.25rem;
+
+    }
+
+    .formGroup input {
+        font-size: .75rem;
+        border: solid .0625rem;
+        border-radius: 1rem;
+    }
+
+    .consulta input{
+        height: 6.25rem;
+    }
+    
+    .consulta ::placeholder{
+        bottom: 1.5625rem;
+     }
+
+     .botonEnviar{
+        width: 12.5rem;
+        height: 1.875rem;
+    }
+    
+    .botonEnviar p{
+        padding: .1875rem;
+        font-size: .875rem
+    }
+
+    footer {
+        height: auto;
+        padding:1.5rem;
+        font-size: .875rem;
+    }
+
+    
+    .logoBlanco1 img{
+    height: 1.875rem;
+    }
+
+
+
+    .redes {
+    position: relative;
+    gap: .0125rem;
+    }
+
+    
+    .redes p{
+      display: none;
+
+
+    }
+
+
+    .redes img{
+        width: 60%;
+        height: auto;
+
+    }
+    .copyright {
+        font-size: .625rem;
+        top: 1.25rem
+    }
+  }
+    

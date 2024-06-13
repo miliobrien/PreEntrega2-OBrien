@@ -231,8 +231,8 @@ header {
     height: 69p;
     background-color:rgb(248, 98, 63); ;
     border-radius: 2.1875rem;
-    text-align: center;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .botonEnviar p{
@@ -241,6 +241,7 @@ header {
     font-weight: 500;
     font-size: 2.25rem;
     color: white;
+    padding-bottom: .125rem;
 }
 
 
@@ -280,7 +281,7 @@ gap: .625rem;
 }
 
 
-/* SERVICES */
+/* SERVICES -grids y pseudoclases */
 
 
 .services {
@@ -293,30 +294,36 @@ gap: .625rem;
 
 
 .services h1 {
-    padding-bottom: 5rem;
     font-weight: 600;
     font-size: 3rem;
     color: white;
     text-align: center;
+    padding-top: .9375rem;
 }
 
 .articles{
+    padding: 3.125rem;
     display:grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
-    justify-items:center; 
+    gap: 1rem;
+    grid-auto-rows: 70vh ;
+    grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr))
 }
 
 .services article {
-    width: 37.1875rem;
-    height: 39.875rem;
-    margin: 25px;
+    width: 100%;
+    height: auto;
     border-radius: 3.9375rem;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
+
+
 .socialMedia h2 {
-    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
     font-weight: 600;
     font-size: 4rem;
     text-align: left;
@@ -324,14 +331,14 @@ gap: .625rem;
 }
 
 .illustration h2 {
-    padding: 3.375rem 16.0625rem 11.4375rem 3.375rem;
+    padding: 0rem 16.0625rem 8rem 3.375rem;
     font-weight: 600;
     font-size: 4rem;
     color: rgb(22, 0, 109);
 }
 
 .webDesign h2 {
-    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
     font-weight: 600;
     font-size: 4rem;
     text-align: left;
@@ -339,7 +346,7 @@ gap: .625rem;
 }
 
 .motionGraphics h2 {
-    padding: 4.625rem 16.0625rem 4.3125rem 5.0625rem;
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
     font-weight: 600;
     font-size: 4rem;
     color: rgb(248, 98, 63);
@@ -560,7 +567,7 @@ justify-content: center;
 .botonEnviar2{
     width: 26.25rem;
     height: 4.3125rem;
-    background-color:rgb(248, 98, 63); ;
+    background-color:rgb(248, 98, 63) ;
     border-radius: 2.1875rem;
     margin: 4rem;
 }
@@ -616,7 +623,21 @@ justify-content: center;
             
         }
 
+        /* SERVICES*/
+        
+        .services{
+            padding: 0rem 8.75rem;
         }
+        .articles{
+            grid-auto-rows: 50vh ;
+        }
+        
+        .services article {
+            margin-bottom: .625rem;
+        }
+
+    }
+
 
         @media (max-width: 768px){
         /* INDEX */
@@ -624,14 +645,69 @@ justify-content: center;
         padding: .3125rem;
         }
         
-        
         .formGroup input {
                 font-size: 1.75rem;
-
-
-
         }
+
+        /* SERVICES*/
+        
+        
+        .services{
+            padding: 0rem 5rem;
+        }
+
+
+        .services article{
+            padding-top: 1.25rem;
+        }
+
+        .articles h2{
+            font-size: 3rem;
+        }
+
+        .articles li{
+            font-size: 2rem;
+        }
+
+        
+        .motionGraphics h2{
+            color: rgb(22, 0, 109);
+            padding: 0rem 16.0625rem 2rem 5.0625rem;
+        }
+
+        
+        .illustration h2{
+            color:rgb(248, 98, 63);
+            padding: 0rem 16.0625rem 4rem 3.375rem;
+        }
+
+        .socialMedia h2 {
+            padding: 0rem 16.0625rem 2rem 5.0625rem;
+          
+        }
+        
+        
+        .webDesign h2 {
+            padding: 0rem 16.0625rem 2rem 5.0625rem;
+    
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+    
 
 
 
@@ -738,9 +814,7 @@ justify-content: center;
 
     
     .redes p{
-      display: none;
-
-
+    display: none;
     }
 
 
@@ -753,5 +827,55 @@ justify-content: center;
         font-size: .625rem;
         top: 1.25rem
     }
-  }
+
     
+
+
+/* SERVICES*/
+
+.articles{
+    padding: 1.5rem;
+    display:grid;
+    gap: 1rem;
+    grid-auto-rows: 60vh ;
+    grid-template-columns:  repeat(auto-fit, minmax(15rem, 1fr))
+}
+
+.services article {
+    width: 100%;
+    
+}
+    .services{
+        padding: 0rem;
+    }
+
+
+    .articles h2{
+        font-size: 2rem;
+    }
+
+    .articles li{
+        font-size: 1.2rem;
+  }
+  .socialMedia h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  
+}
+
+.illustration h2 {
+    padding: 0rem 16.0625rem 4rem 3.375rem;
+   
+}
+
+.webDesign h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+
+  
+}
+
+.motionGraphics h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+
+}
+
+} 

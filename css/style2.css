@@ -289,7 +289,8 @@ gap: .625rem;
     background-image: url("../assets/fondoServices.png");
     background-size: cover;
     background-position: center;
-    padding: 5rem;
+    padding: 0rem 5rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -298,11 +299,11 @@ gap: .625rem;
     font-size: 3rem;
     color: white;
     text-align: center;
-    padding-top: .9375rem;
+    padding: 3.75rem;
 }
 
 .articles{
-    padding: 3.125rem;
+    padding: 0rem 3.125rem;
     display:grid;
     gap: 1rem;
     grid-auto-rows: 70vh ;
@@ -672,9 +673,13 @@ justify-content: center;
 
         /* SERVICES*/
         
-        
+        .services h1{
+            font-size: 2.5rem;
+        }
+
         .services{
             padding: 0rem 5rem;
+            padding-bottom: 5rem;
         }
 
 
@@ -855,8 +860,13 @@ justify-content: center;
 
 /* SERVICES*/
 
+
+.services h1{
+    font-size: 1.25rem;
+}
+
 .articles{
-    padding: 1.5rem;
+    padding: 0rem  1.5rem;
     display:grid;
     gap: 1rem;
     grid-auto-rows: 60vh ;
@@ -869,6 +879,7 @@ justify-content: center;
 }
     .services{
         padding: 0rem;
+        padding-bottom: 2rem;
     }
 
 

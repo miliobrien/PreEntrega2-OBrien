@@ -15,7 +15,11 @@
             width: 25rem;
             height: 21.625rem;
             h1{
-                @include texto(700, 6rem, none)
+                @include texto(700, 6rem, none);
+                img{ 
+                    padding-bottom: 4rem;
+                    padding-left: .3125rem;
+                }              
             }
         }
         .boton{

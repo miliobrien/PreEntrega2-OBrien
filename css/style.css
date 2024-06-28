@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 7.4375rem;
+  padding: 0rem 3rem;
+}
+
+.section1-index {
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(3, 32vh);
+}
+.section1-index .texto-section1-index {
+  display: flex;
+  align-items: center;
+  gap: 6.25rem;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  order: 2;
+}
+.section1-index .texto-section1-index .texto1 {
+  width: 25rem;
+  height: 21.625rem;
+}
+.section1-index .texto-section1-index .texto1 h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: none;
+}
+.section1-index .texto-section1-index .boton {
+  width: 20rem;
+  aspect-ratio: 4/1;
+  background-color: white;
+  border: solid 0.0625rem rgb(248, 98, 63);
+  border-radius: 2.1875rem;
+  display: flex;
+  justify-content: center;
+}
+.section1-index .texto-section1-index .boton:hover {
+  background-color: rgb(248, 98, 63);
+  border: solid 0.0625rem white;
+}
+.section1-index .texto-section1-index .boton a {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: rgb(248, 98, 63);
+  text-decoration: none;
+  padding: 0.625rem 3.125rem;
+  text-wrap: nowrap;
+}
+.section1-index .texto-section1-index .boton a:hover {
+  color: white;
+}
+.section1-index .imagen1 {
+  grid-column: 1/5;
+  grid-row: 1/4;
+  order: 1;
+}
+.section1-index .imagen1 img {
+  height: 100%;
+  width: 100%;
+}
+
+.section2-index {
+  padding-right: 6.25rem;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/patin.png");
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: center;
+  gap: 6rem;
+}
+.section2-index p {
+  width: 26.625rem;
+  height: 14.1875rem;
+  font-weight: 600;
+  font-size: 3rem;
+  color: none;
+  letter-spacing: -0.1875rem;
+}
+
+.section3-index {
+  width: 100%;
+  background-image: url("../assets/fondoBloque3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+  padding: 3.125rem 0;
+}
+.section3-index h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: white;
+}
+.section3-index .contenedorForm {
+  padding: 3.4375rem 5.5rem;
+  width: 70%;
+  border: solid 3px;
+  border-color: white;
+  border-radius: 2.1875rem;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: none;
+}
+.section3-index .contenedorForm .formGroup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: 3.625rem;
+}
+.section3-index .contenedorForm .formGroup input {
+  outline: none;
+  padding: 0.9375rem;
+  border-radius: 1.5625rem;
+  border: solid 3px;
+  border-color: white;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 2.25rem;
+  color: white;
+  width: 100%;
+}
+.section3-index .contenedorForm .formGroup ::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.consulta input {
+  height: 10rem;
+}
+.consulta ::placeholder {
+  display: flex;
+  position: relative;
+  bottom: 2.8125rem;
+}
+
+footer {
+  width: 100%;
+  height: 15.9375rem;
+  padding: 3rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgb(22, 0, 109);
+}
+footer .section1-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+footer .section1-footer .redes {
+  display: flex;
+  gap: 0.625rem;
+}
+footer .section2-footer p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.59);
+  position: relative;
+  top: 3.75rem;
+}
+
+.nav-item {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.nav-item a {
+  color: black;
+}
+.nav-item a:hover {
+  color: rgb(248, 98, 63);
+}
+
+/*# sourceMappingURL=style.css.map */

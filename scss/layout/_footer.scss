@@ -1,0 +1,22 @@
+footer {
+    width: 100%;
+    height: 15.9375rem;
+    padding:3rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    background-color: $color-violeta;
+    .section1-footer{
+        @include flex (row, nowrap, space-between, center, none);
+        .redes{
+            display: flex;
+            gap: .625rem;
+        }
+    }
+    .section2-footer p{
+        text-align: center;
+        color: rgba(255, 255, 255, 59%);
+        position: relative;
+        top: 3.75rem
+    }
+}

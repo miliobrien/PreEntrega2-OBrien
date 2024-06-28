@@ -1,0 +1,71 @@
+.section1-about{
+    width: 100%;
+    height: 55.6875rem;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/bloque1About.png");
+    @include flex (row, nowrap, center, center, 6rem);
+    .texto-section1-about{
+        @include flex (column, nowrap, center, none, 1.875rem);
+        padding-top: 6.25rem;
+        h1{
+            font-weight: 700;
+            font-size: 6rem;
+        }
+        p{
+            width: 39.4375rem;
+            height: 14.5625rem;
+            font-weight: 300;
+            font-size: 2rem;
+        }    
+    }
+}
+
+.section2-about{
+    display: flex;
+    flex-direction: column;
+    .sofia{ 
+        width: 100%;
+        padding: 5rem;
+        @include flex (row, nowrap, center, center, 3.125rem);
+        .fotoPerfil { 
+            display: flex;
+            justify-content: right;
+        }
+        .nombre { 
+            display: flex;  
+            flex-direction: column;    
+            justify-content: left;
+            gap: 1.875rem;   
+            h2 { 
+            @include texto(700, 6rem, black);   
+            } 
+            p { 
+            width: 45.625rem;  
+            font-weight: 300;  
+            font-size: 2rem;  
+            }
+        }   
+    }
+    .mauge{
+        @extend .sofia;
+        background-color: rgb(142, 89, 255);
+        .nombre h2{
+            @include texto(700, 6rem, white);  
+        }
+        p{
+            color: white;
+        }
+    }
+    .cami{
+        @extend .sofia;
+        .nombre{
+            gap: 0.5rem;
+        }
+    }
+
+}
+
+
+
+

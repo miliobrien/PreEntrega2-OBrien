@@ -278,6 +278,88 @@ header {
   width: 100%;
 }
 
+.section1-about {
+  width: 100%;
+  height: 55.6875rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../assets/bloque1About.png");
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+.section1-about .texto-section1-about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: none;
+  gap: 1.875rem;
+  padding-top: 6.25rem;
+}
+.section1-about .texto-section1-about h1 {
+  font-weight: 700;
+  font-size: 6rem;
+}
+.section1-about .texto-section1-about p {
+  width: 39.4375rem;
+  height: 14.5625rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.section2-about {
+  display: flex;
+  flex-direction: column;
+}
+.section2-about .sofia, .section2-about .cami, .section2-about .mauge {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.section2-about .sofia .fotoPerfil, .section2-about .cami .fotoPerfil, .section2-about .mauge .fotoPerfil {
+  display: flex;
+  justify-content: right;
+}
+.section2-about .sofia .nombre, .section2-about .cami .nombre, .section2-about .mauge .nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1.875rem;
+}
+.section2-about .sofia .nombre h2, .section2-about .cami .nombre h2, .section2-about .mauge .nombre h2 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: black;
+}
+.section2-about .sofia .nombre p, .section2-about .cami .nombre p, .section2-about .mauge .nombre p {
+  width: 45.625rem;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.section2-about .mauge {
+  background-color: rgb(142, 89, 255);
+}
+.section2-about .mauge .nombre h2 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: white;
+}
+.section2-about .mauge p {
+  color: white;
+}
+.section2-about .cami .nombre {
+  gap: 0.5rem;
+}
+
 footer {
   width: 100%;
   height: 15.9375rem;

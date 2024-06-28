@@ -114,7 +114,20 @@
     }
     ::placeholder{
         display: flex;
-    position: relative;
-    bottom: 2.8125rem;
+        position: relative;
+        bottom: 2.8125rem;
+    }
+}
+
+.botonEnviar{
+    width: 26.25rem;
+    height: 4.3125rem;
+    background-color:rgb(248, 98, 63) ;
+    border-radius: 2.1875rem;
+    margin: 4rem;
+    p{
+        @include texto (500, 2.25rem, white);
+        text-align: center;
+        padding-top: .5rem;
     }
 }

@@ -4,6 +4,13 @@
     color: $colores;
 }
 
+
+@mixin texto-titulos ($colores){
+    font-weight: 600;
+    font-size: 3rem;
+    color: $colores;
+}
+
 @mixin flex ($direction, $wrap, $justify, $align, $gap){
     display:flex;
     flex-direction: $direction;

@@ -1,0 +1,28 @@
+.section1-work{
+    width: 100%;
+    .titulo-work{
+        background-image: url("../assets/fondoOurWork.png");
+        background-size: cover;
+        background-position: center;
+        h1{
+            @include texto-titulos (white);
+            text-align: center;
+            padding: 3.75rem;
+            margin: 0rem;
+            span{
+                color: $color-naranja;
+            }
+        }
+    }
+    .fotos-work{
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            height: 32.125rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

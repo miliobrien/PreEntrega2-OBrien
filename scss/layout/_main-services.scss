@@ -6,7 +6,7 @@
     padding: 0rem 5rem;
     padding-bottom: 5rem;
     h1{
-        @include texto(600, 3rem, white);
+        @include texto-titulos(white);
         text-align: center;
         padding: 3.75rem;
         span{

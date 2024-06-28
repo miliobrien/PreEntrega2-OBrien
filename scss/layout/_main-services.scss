@@ -1,0 +1,68 @@
+.section1-services{
+    width: 100%;
+    background-image: url("../assets/fondoServices.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0rem 5rem;
+    padding-bottom: 5rem;
+    h1{
+        @include texto(600, 3rem, white);
+        text-align: center;
+        padding: 3.75rem;
+        span{
+            color: $color-naranja;
+        }
+    }
+    .cards{
+        padding: 0rem 3.125rem;
+        display:grid;
+        gap: 1rem;
+        grid-auto-rows: 70vh ;
+        grid-template-columns:  repeat(auto-fit, minmax(30rem, 1fr));
+        article{
+            width: 100%;
+            height: auto;
+            border-radius: 3.9375rem;
+            background-color: white;
+            @include flex (column, nowrap, center, none, none);
+            ul{
+                @include texto(300, 2.25rem, $color-violeta);
+                list-style: none;
+                padding-left: 5.5625rem;
+                li{
+                    margin-bottom: 1.125rem;
+                }
+            }
+        }
+    }
+}
+
+.socialMedia h2 {
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+    color: rgb(22, 0, 109);
+}
+
+.illustration h2 {
+    padding: 0rem 16.0625rem 8rem 3.375rem;
+    font-weight: 600;
+    font-size: 4rem;
+    color: rgb(22, 0, 109);
+}
+
+.webDesign h2 {
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: left;
+    color: rgb(248, 98, 63);
+}
+
+.motionGraphics h2 {
+    padding: 0rem 16.0625rem 4.3125rem 5.0625rem;
+    font-weight: 600;
+    font-size: 4rem;
+    color: rgb(248, 98, 63);
+}

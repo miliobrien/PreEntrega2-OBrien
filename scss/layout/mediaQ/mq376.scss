@@ -1,6 +1,22 @@
 @media (max-width: 376px){
     
     /* INDEX */
+    
+    header{
+        padding: .3125rem 1.5rem;
+        height: auto;
+        
+        .container-fluid{
+            padding-bottom: .1875rem;
+            margin-bottom: 5px;
+            .navbar-brand{
+                img{
+                    height: 1.875rem;
+                }
+            }
+        }
+    }
+
 
     .section1-index .texto-section1-index{
         grid-column: 2/4;
@@ -105,4 +121,202 @@ footer .section2-footer{
         top: 1.25rem
     }
 }
+
+/* SERVICES*/
+
+.section1-services{
+    padding: 0rem;
+    padding-bottom: 2rem;
+    h1{
+        font-size: 1.25rem;
+    }
+    
+    .cards{
+        padding: 0rem  1.5rem;
+        display:grid;
+        gap: 1rem;
+        grid-auto-rows: 60vh ;
+        grid-template-columns:  repeat(auto-fit, minmax(15rem, 1fr));
+        
+        article{
+            width: 100%;
+            h2{
+            font-size: 2rem;
+            }
+            li{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .socialMedia h2 {
+        padding: 0rem 16.0625rem 2rem 5.0625rem;
+    }
+    
+    .illustration h2 {
+        padding: 0rem 16.0625rem 4rem 3.375rem;
+    }
+    
+    .webDesign h2 {
+        padding: 0rem 16.0625rem 2rem 5.0625rem;
+    }
+    
+    .motionGraphics h2 {
+        padding: 0rem 16.0625rem 2rem 5.0625rem;
+    }
+}
+
+/* WORK */
+
+.section1-work .titulo-work h1{
+    font-size: 1.25rem;
+}
+
+/* ABOUT */
+
+.section1-about {
+    background-image: url("../assets/about-mq300.png");
+    .texto-section1-about{
+        gap: 1.25rem;
+        padding-top: 15.625rem;
+        h1{
+            font-size: 2rem;
+        }
+    
+        p{
+            font-size: 1rem;
+            width: 18.75rem;
+        }
+    }
+    .imagen-section1-about{
+        img{
+            height: 50%;
+        }
+    }
+    
+}
+
+.section2-about{
+    .sofia{
+        gap: 2rem;
+        .fotoPerfil{
+            img{
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+        .nombre{
+            gap: 0.5rem;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                width: 20rem;
+            }
+        }
+    }
+    .mauge{
+        gap: 2rem;
+        .fotoPerfil{
+            img{
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+        .nombre{
+            gap: 0.5rem;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                width: 20rem;
+            }
+        }
+    }
+    .cami{
+        gap: 2rem;
+        .fotoPerfil{
+            img{
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+        .nombre{
+            gap: 0.5rem;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+
+/* CONTACT */
+
+
+.section1-contact{
+    padding: .625rem;
+}
+.section1-contact .texto-section1-contact{
+    gap: .9375rem;
+    padding: 30px 0rem;
+    h1{
+        height: auto;
+        font-size: 2rem;     
+        span{ 
+            
+            img{
+                height: 50%;
+                width: auto;
+                padding-bottom: 1.25rem;
+            }
+        } 
+    }
+    p{
+        font-size: .75rem;
+        width: 18rem;
+        height: auto;
+    }
+}
+
+.section1-contact{
+    .mainContainer{
+        .contenedorForm2{
+            padding: 1.25rem 1.25rem;
+            border-radius: 1.5rem;
+            .formGroup2{
+                gap: .875rem;
+                input{
+                    width: 100%;
+                    padding: 0.5rem;
+                    font-size: .75rem;
+                    border-radius: .9375rem;
+                }
+            }
+        }
+    }
+}
+
+::placeholder{
+    font-size: .75rem;
+    
+}
+.botonEnviar2{
+    width: 6.8125rem;
+    height: 1.4375rem;
+    p{
+        font-size: .75rem;
+        padding-top: 0rem;
+    }
+
+}
+
+
+
+
 }

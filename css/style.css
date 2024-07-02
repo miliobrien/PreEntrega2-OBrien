@@ -686,114 +686,113 @@ footer .section2-footer p {
     font-size: 0.9375rem;
     top: 1.25rem;
   }
+  /* SERVICES*/
+  .section1-services {
+    padding: 0rem 5rem;
+  }
+  .section1-services h1 {
+    font-size: 2.5rem;
+  }
+  .section1-services .cards h2 {
+    font-size: 3rem;
+  }
+  .section1-services .cards li {
+    font-size: 2rem;
+  }
+  .motionGraphics h2 {
+    color: rgb(22, 0, 109);
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .illustration h2 {
+    color: rgb(248, 98, 63);
+    padding: 0rem 16.0625rem 4rem 3.375rem;
+  }
+  .socialMedia h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .webDesign h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  /* WORK*/
+  .section1-work .titulo-work h1 {
+    font-size: 2.5rem;
+  }
+  /* ABOUT*/
+  .section1-about {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .section1-about .texto-section1-about h1 {
+    font-size: 3.5rem;
+  }
+  .section1-about .texto-section1-about p {
+    font-size: 1.5rem;
+    width: 31.25rem;
+  }
+  .section1-about .imagen-section1-about img {
+    height: 75%;
+  }
+  .section2-about .sofia {
+    flex-direction: column;
+  }
+  .section2-about .sofia .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  .section2-about .mauge {
+    flex-direction: column;
+  }
+  .section2-about .mauge .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  .section2-about .cami {
+    flex-direction: column;
+  }
+  .section2-about .cami .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  /* CONTACT*/
+  .section1-contact .texto-section1-contact {
+    gap: 1.875rem;
+  }
+  .section1-contact .texto-section1-contact h1 {
+    font-size: 4.5rem;
+  }
+  .section1-contact .texto-section1-contact p {
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+  .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
+    width: 31.25rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+  .botonEnviar2 {
+    width: 13.5rem;
+    height: 2.875rem;
+  }
+  .botonEnviar2 p {
+    font-size: 1.5rem;
+  }
 }
-/* SERVICES*/
-.section1-services {
-  padding: 0rem 5rem;
-}
-.section1-services h1 {
-  font-size: 2.5rem;
-}
-.section1-services .cards h2 {
-  font-size: 3rem;
-}
-.section1-services .cards li {
-  font-size: 2rem;
-}
-
-.motionGraphics h2 {
-  color: rgb(22, 0, 109);
-  padding: 0rem 16.0625rem 2rem 5.0625rem;
-}
-
-.illustration h2 {
-  color: rgb(248, 98, 63);
-  padding: 0rem 16.0625rem 4rem 3.375rem;
-}
-
-.socialMedia h2 {
-  padding: 0rem 16.0625rem 2rem 5.0625rem;
-}
-
-.webDesign h2 {
-  padding: 0rem 16.0625rem 2rem 5.0625rem;
-}
-
-/* WORK*/
-.section1-work .titulo-work h1 {
-  font-size: 2.5rem;
-}
-
-/* ABOUT*/
-.section1-about {
-  flex-direction: column;
-  gap: 1.875rem;
-}
-.section1-about .texto-section1-about h1 {
-  font-size: 3.5rem;
-}
-.section1-about .texto-section1-about p {
-  font-size: 1.5rem;
-  width: 31.25rem;
-}
-.section1-about .imagen-section1-about img {
-  height: 75%;
-}
-
-.section2-about .sofia {
-  flex-direction: column;
-}
-.section2-about .sofia .nombre {
-  justify-content: center;
-  text-align: center;
-}
-.section2-about .mauge {
-  flex-direction: column;
-}
-.section2-about .mauge .nombre {
-  justify-content: center;
-  text-align: center;
-}
-.section2-about .cami {
-  flex-direction: column;
-}
-.section2-about .cami .nombre {
-  justify-content: center;
-  text-align: center;
-}
-
-/* CONTACT*/
-.section1-contact .texto-section1-contact {
-  gap: 1.875rem;
-}
-.section1-contact .texto-section1-contact h1 {
-  font-size: 4.5rem;
-}
-.section1-contact .texto-section1-contact p {
-  font-size: 1.5rem;
-  width: 35rem;
-}
-
-.section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
-  width: 31.25rem;
-  padding: 0.5rem;
-  font-size: 1.5rem;
-}
-
-::placeholder {
-  font-size: 1.5rem;
-}
-
-.botonEnviar2 {
-  width: 13.5rem;
-  height: 2.875rem;
-}
-.botonEnviar2 p {
-  font-size: 1.5rem;
-}
-
 @media (max-width: 376px) {
   /* INDEX */
+  header {
+    padding: 0.3125rem 1.5rem;
+    height: auto;
+  }
+  header .container-fluid {
+    padding-bottom: 0.1875rem;
+    margin-bottom: 5px;
+  }
+  header .container-fluid .navbar-brand img {
+    height: 1.875rem;
+  }
   .section1-index .texto-section1-index {
     grid-column: 2/4;
     grid-row: 2;
@@ -881,6 +880,161 @@ footer .section2-footer p {
   footer .section2-footer p {
     font-size: 0.625rem;
     top: 1.25rem;
+  }
+  /* SERVICES*/
+  .section1-services {
+    padding: 0rem;
+    padding-bottom: 2rem;
+  }
+  .section1-services h1 {
+    font-size: 1.25rem;
+  }
+  .section1-services .cards {
+    padding: 0rem 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 60vh;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  .section1-services .cards article {
+    width: 100%;
+  }
+  .section1-services .cards article h2 {
+    font-size: 2rem;
+  }
+  .section1-services .cards article li {
+    font-size: 1.2rem;
+  }
+  .section1-services .socialMedia h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .section1-services .illustration h2 {
+    padding: 0rem 16.0625rem 4rem 3.375rem;
+  }
+  .section1-services .webDesign h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .section1-services .motionGraphics h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  /* WORK */
+  .section1-work .titulo-work h1 {
+    font-size: 1.25rem;
+  }
+  /* ABOUT */
+  .section1-about {
+    background-image: url("../assets/about-mq300.png");
+  }
+  .section1-about .texto-section1-about {
+    gap: 1.25rem;
+    padding-top: 15.625rem;
+  }
+  .section1-about .texto-section1-about h1 {
+    font-size: 2rem;
+  }
+  .section1-about .texto-section1-about p {
+    font-size: 1rem;
+    width: 18.75rem;
+  }
+  .section1-about .imagen-section1-about img {
+    height: 50%;
+  }
+  .section2-about .sofia {
+    gap: 2rem;
+  }
+  .section2-about .sofia .fotoPerfil img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .section2-about .sofia .nombre {
+    gap: 0.5rem;
+  }
+  .section2-about .sofia .nombre h2 {
+    font-size: 2rem;
+  }
+  .section2-about .sofia .nombre p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .section2-about .mauge {
+    gap: 2rem;
+  }
+  .section2-about .mauge .fotoPerfil img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .section2-about .mauge .nombre {
+    gap: 0.5rem;
+  }
+  .section2-about .mauge .nombre h2 {
+    font-size: 2rem;
+  }
+  .section2-about .mauge .nombre p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  .section2-about .cami {
+    gap: 2rem;
+  }
+  .section2-about .cami .fotoPerfil img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .section2-about .cami .nombre {
+    gap: 0.5rem;
+  }
+  .section2-about .cami .nombre h2 {
+    font-size: 2rem;
+  }
+  .section2-about .cami .nombre p {
+    font-size: 1rem;
+    width: 20rem;
+  }
+  /* CONTACT */
+  .section1-contact {
+    padding: 0.625rem;
+  }
+  .section1-contact .texto-section1-contact {
+    gap: 0.9375rem;
+    padding: 30px 0rem;
+  }
+  .section1-contact .texto-section1-contact h1 {
+    height: auto;
+    font-size: 2rem;
+  }
+  .section1-contact .texto-section1-contact h1 span img {
+    height: 50%;
+    width: auto;
+    padding-bottom: 1.25rem;
+  }
+  .section1-contact .texto-section1-contact p {
+    font-size: 0.75rem;
+    width: 18rem;
+    height: auto;
+  }
+  .section1-contact .mainContainer .contenedorForm2 {
+    padding: 1.25rem 1.25rem;
+    border-radius: 1.5rem;
+  }
+  .section1-contact .mainContainer .contenedorForm2 .formGroup2 {
+    gap: 0.875rem;
+  }
+  .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 0.9375rem;
+  }
+  ::placeholder {
+    font-size: 0.75rem;
+  }
+  .botonEnviar2 {
+    width: 6.8125rem;
+    height: 1.4375rem;
+  }
+  .botonEnviar2 p {
+    font-size: 0.75rem;
+    padding-top: 0rem;
   }
 }
 

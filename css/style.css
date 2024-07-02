@@ -334,7 +334,7 @@ header {
   display: flex;
   flex-direction: column;
 }
-.section2-about .sofia, .section2-about .cami, .section2-about .mauge {
+.section2-about .sofia {
   width: 100%;
   padding: 5rem;
   display: flex;
@@ -344,39 +344,87 @@ header {
   align-items: center;
   gap: 3.125rem;
 }
-.section2-about .sofia .fotoPerfil, .section2-about .cami .fotoPerfil, .section2-about .mauge .fotoPerfil {
+.section2-about .sofia .fotoPerfil {
   display: flex;
   justify-content: right;
 }
-.section2-about .sofia .nombre, .section2-about .cami .nombre, .section2-about .mauge .nombre {
+.section2-about .sofia .nombre {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 1.875rem;
 }
-.section2-about .sofia .nombre h2, .section2-about .cami .nombre h2, .section2-about .mauge .nombre h2 {
+.section2-about .sofia .nombre h2 {
   font-weight: 700;
   font-size: 6rem;
   color: black;
 }
-.section2-about .sofia .nombre p, .section2-about .cami .nombre p, .section2-about .mauge .nombre p {
+.section2-about .sofia .nombre p {
   width: 45.625rem;
   font-weight: 300;
   font-size: 2rem;
 }
 .section2-about .mauge {
+  width: 100%;
+  padding: 5rem;
   background-color: rgb(142, 89, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.section2-about .mauge .fotoPerfil {
+  display: flex;
+  justify-content: right;
+}
+.section2-about .mauge .nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1.875rem;
 }
 .section2-about .mauge .nombre h2 {
   font-weight: 700;
   font-size: 6rem;
   color: white;
 }
-.section2-about .mauge p {
+.section2-about .mauge .nombre p {
+  width: 45.625rem;
+  font-weight: 300;
+  font-size: 2rem;
   color: white;
 }
+.section2-about .cami {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.section2-about .cami .fotoPerfil {
+  display: flex;
+  justify-content: right;
+}
 .section2-about .cami .nombre {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
   gap: 0.5rem;
+}
+.section2-about .cami .nombre h2 {
+  font-weight: 700;
+  font-size: 6rem;
+  color: black;
+}
+.section2-about .cami .nombre p {
+  width: 45.625rem;
+  font-weight: 300;
+  font-size: 2rem;
 }
 
 .section1-contact {
@@ -564,19 +612,56 @@ footer .section2-footer p {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/about-mq1024.png");
   }
-  .sofia .fotoPerfil .img, .section2-about .mauge .fotoPerfil .img, .section2-about .cami .fotoPerfil .img {
-    width: 80%;
-    height: 80%;
+  .section2-about .sofia .fotoPerfil img {
+    width: 20rem;
+    height: 20rem;
   }
-  .sofia .nombre, .section2-about .mauge .nombre, .section2-about .cami .nombre {
-    gap: 16px;
+  .section2-about .sofia .nombre {
+    gap: 1.5rem;
   }
-  .sofia .nombre h2, .section2-about .mauge .nombre h2, .section2-about .cami .nombre h2 {
+  .section2-about .sofia .nombre h2 {
     font-size: 4rem;
   }
-  .sofia .nombre p, .section2-about .mauge .nombre p, .section2-about .cami .nombre p {
-    font-size: 24px;
+  .section2-about .sofia .nombre p {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+  .section2-about .mauge .fotoPerfil img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .section2-about .mauge .nombre {
+    gap: 1.5rem;
+  }
+  .section2-about .mauge .nombre h2 {
+    font-size: 4rem;
+  }
+  .section2-about .mauge .nombre p {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+  .section2-about .cami .fotoPerfil img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .section2-about .cami .nombre {
+    gap: 1rem;
+  }
+  .section2-about .cami .nombre h2 {
+    font-size: 4rem;
+  }
+  .section2-about .cami .nombre p {
+    font-size: 1.5rem;
+    width: 30rem;
+  }
+  /* CONTACT */
+  .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
+    width: 45.625rem;
+  }
+  ::placeholder {
+    font-size: 1.875rem;
   }
 }
 

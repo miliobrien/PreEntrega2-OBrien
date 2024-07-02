@@ -56,25 +56,85 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/about-mq1024.png");
     }
 
-.sofia{
-    .fotoPerfil { 
-        .img{
-            width: 80%;
-            height: 80%;
-        }
-    }  
-    .nombre{
-        gap: 16px;
-        h2{
-            font-size: 4rem;
-        }
-        p{
-            font-size: 24px;
-        }
 
+.section2-about{
+    .sofia{
+        .fotoPerfil{
+            img{
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+        .nombre{
+            gap: 1.5rem;
+            h2{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.5rem;
+                width: 30rem;
+            }
+        }
     }
+    .mauge{
+        .fotoPerfil{
+            img{
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+        .nombre{
+            gap: 1.5rem;
+            h2{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.5rem;
+                width: 30rem;
+            }
+        }
+    }
+    .cami{
+        .fotoPerfil{
+            img{
+                width: 20rem;
+                height: 20rem;
+            }
+        }
+        .nombre{
+            gap: 1rem;
+            h2{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.5rem;
+                width: 30rem;
+            }
+        }
+    }
+}
+
+/* CONTACT */
+
+
+.section1-contact{
+    .mainContainer{
+        .contenedorForm2{
+            .formGroup2{
+                input{
+                    width: 45.625rem;
+                }
+            }
+        }
+    }
+}
+ 
+::placeholder{
+    font-size: 1.875rem;
+}
 
 
 }
@@ -91,5 +151,6 @@
 
 
 
-}
+
+
 

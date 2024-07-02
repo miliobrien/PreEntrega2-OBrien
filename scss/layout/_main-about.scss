@@ -47,20 +47,54 @@
             }
         }   
     }
-    .mauge{
-        @extend .sofia;
+
+    .mauge{ 
+        width: 100%;
+        padding: 5rem;
         background-color: rgb(142, 89, 255);
-        .nombre h2{
-            @include texto(700, 6rem, white);  
+        @include flex (row, nowrap, center, center, 3.125rem);
+        .fotoPerfil { 
+            display: flex;
+            justify-content: right;
         }
-        p{
-            color: white;
+        .nombre { 
+            display: flex;  
+            flex-direction: column;    
+            justify-content: left;
+            gap: 1.875rem;   
+            h2 { 
+            @include texto(700, 6rem, white);   
+            } 
+            p { 
+            width: 45.625rem;  
+            font-weight: 300;  
+            font-size: 2rem;  
+            color: white
+            } 
         }
     }
-    .cami{
-        @extend .sofia;
-        .nombre{
-            gap: 0.5rem;
+    
+    .cami{ 
+        width: 100%;
+        padding: 5rem;
+        @include flex (row, nowrap, center, center, 3.125rem);
+        .fotoPerfil { 
+            display: flex;
+            justify-content: right;
+        }
+        .nombre { 
+            display: flex;  
+            flex-direction: column;    
+            justify-content: left;
+            gap: 0.5rem;   
+            h2 { 
+            @include texto(700, 6rem, black);   
+            } 
+            p { 
+            width: 45.625rem;  
+            font-weight: 300;  
+            font-size: 2rem;  
+            } 
         }
     }
 

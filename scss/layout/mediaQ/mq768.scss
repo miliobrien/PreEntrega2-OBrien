@@ -23,6 +23,14 @@
     }
     }
 
+    footer .section2-footer{
+        p{
+            font-size: .9375rem;
+            top: 1.25rem
+        }
+    }
+    }
+
 /* SERVICES*/
 
 .section1-services{
@@ -138,16 +146,17 @@ padding: 0rem 16.0625rem 2rem 5.0625rem;
 
 ::placeholder{
     font-size: 1.5rem;
+    
 }
 .botonEnviar2{
     width: 13.5rem;
     height: 2.875rem;
     p{
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
 
 }
 
 
-}
+
 

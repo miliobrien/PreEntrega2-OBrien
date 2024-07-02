@@ -524,7 +524,7 @@ header {
 
 footer {
   width: 100%;
-  height: 15.9375rem;
+  height: auto;
   padding: 1.5rem;
   font-weight: 500;
   font-size: 1.5rem;
@@ -546,8 +546,6 @@ footer .section1-footer .redes {
 footer .section2-footer p {
   text-align: center;
   color: rgba(255, 255, 255, 0.59);
-  position: relative;
-  top: 3.75rem;
 }
 
 .nav-item {
@@ -659,6 +657,9 @@ footer .section2-footer p {
     width: 30rem;
   }
   /* CONTACT */
+  .section1-contact .texto-section1-contact {
+    padding: 4.375rem;
+  }
   .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
     width: 45.625rem;
     font-size: 1.875rem;
@@ -681,98 +682,205 @@ footer .section2-footer p {
   .section1-footer :first-child img {
     height: 3.125rem;
   }
-  /* SERVICES*/
-  .section1-services {
-    padding: 0rem 5rem;
+  footer .section2-footer p {
+    font-size: 0.9375rem;
+    top: 1.25rem;
   }
-  .section1-services h1 {
-    font-size: 2.5rem;
+}
+/* SERVICES*/
+.section1-services {
+  padding: 0rem 5rem;
+}
+.section1-services h1 {
+  font-size: 2.5rem;
+}
+.section1-services .cards h2 {
+  font-size: 3rem;
+}
+.section1-services .cards li {
+  font-size: 2rem;
+}
+
+.motionGraphics h2 {
+  color: rgb(22, 0, 109);
+  padding: 0rem 16.0625rem 2rem 5.0625rem;
+}
+
+.illustration h2 {
+  color: rgb(248, 98, 63);
+  padding: 0rem 16.0625rem 4rem 3.375rem;
+}
+
+.socialMedia h2 {
+  padding: 0rem 16.0625rem 2rem 5.0625rem;
+}
+
+.webDesign h2 {
+  padding: 0rem 16.0625rem 2rem 5.0625rem;
+}
+
+/* WORK*/
+.section1-work .titulo-work h1 {
+  font-size: 2.5rem;
+}
+
+/* ABOUT*/
+.section1-about {
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.section1-about .texto-section1-about h1 {
+  font-size: 3.5rem;
+}
+.section1-about .texto-section1-about p {
+  font-size: 1.5rem;
+  width: 31.25rem;
+}
+.section1-about .imagen-section1-about img {
+  height: 75%;
+}
+
+.section2-about .sofia {
+  flex-direction: column;
+}
+.section2-about .sofia .nombre {
+  justify-content: center;
+  text-align: center;
+}
+.section2-about .mauge {
+  flex-direction: column;
+}
+.section2-about .mauge .nombre {
+  justify-content: center;
+  text-align: center;
+}
+.section2-about .cami {
+  flex-direction: column;
+}
+.section2-about .cami .nombre {
+  justify-content: center;
+  text-align: center;
+}
+
+/* CONTACT*/
+.section1-contact .texto-section1-contact {
+  gap: 1.875rem;
+}
+.section1-contact .texto-section1-contact h1 {
+  font-size: 4.5rem;
+}
+.section1-contact .texto-section1-contact p {
+  font-size: 1.5rem;
+  width: 35rem;
+}
+
+.section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
+  width: 31.25rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+}
+
+.botonEnviar2 {
+  width: 13.5rem;
+  height: 2.875rem;
+}
+.botonEnviar2 p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 376px) {
+  /* INDEX */
+  .section1-index .texto-section1-index {
+    grid-column: 2/4;
+    grid-row: 2;
+    gap: 0rem;
   }
-  .section1-services .cards h2 {
-    font-size: 3rem;
+  .section1-index .texto-section1-index .texto1 {
+    width: 9.875rem;
   }
-  .section1-services .cards li {
-    font-size: 2rem;
+  .section1-index .texto-section1-index .texto1 h1 {
+    font-size: 2.25rem;
   }
-  .motionGraphics h2 {
-    color: rgb(22, 0, 109);
-    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  .section1-index .texto-section1-index .texto1 h1 span img {
+    position: relative;
+    bottom: 1.125rem;
+    height: 0.9375rem;
+    padding-bottom: 0rem;
+    padding-left: 0.1875rem;
   }
-  .illustration h2 {
-    color: rgb(248, 98, 63);
-    padding: 0rem 16.0625rem 4rem 3.375rem;
+  .section1-index .texto-section1-index .boton {
+    width: 10rem;
+    right: 0px;
   }
-  .socialMedia h2 {
-    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  .section1-index .texto-section1-index .boton a {
+    font-size: 1rem;
+    padding: 0.3125rem 1.5625rem;
   }
-  .webDesign h2 {
-    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  .section2-index {
+    height: 90vh;
   }
-  /* WORK*/
-  .section1-work .titulo-work h1 {
-    font-size: 2.5rem;
+  .section2-index p {
+    font-size: 1.5625rem;
+    width: 15.625rem;
+    height: 6.5625rem;
+    letter-spacing: -0.0625rem;
+    top: 11rem;
   }
-  /* ABOUT*/
-  .section1-about {
-    flex-direction: column;
-    gap: 1.875rem;
+  .section3-index h2 {
+    font-size: 1.125rem;
   }
-  .section1-about .texto-section1-about h1 {
-    font-size: 3.5rem;
+  .section3-index .contenedorForm {
+    padding: 1.5625rem 2.75rem;
+    width: 90%;
+    border: solid 0.0625rem;
+    border-color: white;
   }
-  .section1-about .texto-section1-about p {
-    font-size: 1.5rem;
-    width: 31.25rem;
+  .section3-index .contenedorForm .formGroup {
+    gap: 1.25rem;
   }
-  .section1-about .imagen-section1-about img {
-    height: 75%;
+  .section3-index .contenedorForm .formGroup input {
+    font-size: 0.75rem;
+    border: solid 0.0625rem;
+    border-radius: 1rem;
+    font-size: 1.25rem;
   }
-  .section2-about .sofia {
-    flex-direction: column;
+  .section3-index .contenedorForm ::placeholder {
+    font-size: 1.25rem;
   }
-  .section2-about .sofia .nombre {
-    justify-content: center;
-    text-align: center;
+  .botonEnviar {
+    margin: 1.25rem;
+    width: 12.5rem;
+    height: 1.875rem;
   }
-  .section2-about .mauge {
-    flex-direction: column;
+  .botonEnviar p {
+    padding: 0.1875rem;
+    font-size: 0.875rem;
   }
-  .section2-about .mauge .nombre {
-    justify-content: center;
-    text-align: center;
+  footer .section1-footer {
+    height: auto;
+    padding: 1.5rem;
+    font-size: 0.875rem;
   }
-  .section2-about .cami {
-    flex-direction: column;
+  footer .section1-footer .logo-footer img {
+    height: 1.875rem;
   }
-  .section2-about .cami .nombre {
-    justify-content: center;
-    text-align: center;
+  footer .section1-footer .redes {
+    position: relative;
+    gap: 0.125rem;
   }
-  /* CONTACT*/
-  .section1-contact .texto-section1-contact {
-    gap: 1.875rem;
+  footer .section1-footer .redes img {
+    height: 1.25rem;
   }
-  .section1-contact .texto-section1-contact h1 {
-    font-size: 4.5rem;
+  footer .section1-footer .redes p {
+    display: none;
   }
-  .section1-contact .texto-section1-contact p {
-    font-size: 1.5rem;
-    width: 35rem;
-  }
-  .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
-    width: 31.25rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
-  }
-  ::placeholder {
-    font-size: 1.5rem;
-  }
-  .botonEnviar2 {
-    width: 13.5rem;
-    height: 2.875rem;
-  }
-  .botonEnviar2 p {
-    font-size: 1.5rem;
+  footer .section2-footer p {
+    font-size: 0.625rem;
+    top: 1.25rem;
   }
 }
 

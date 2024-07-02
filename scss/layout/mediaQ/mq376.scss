@@ -1,0 +1,108 @@
+@media (max-width: 376px){
+    
+    /* INDEX */
+
+    .section1-index .texto-section1-index{
+        grid-column: 2/4;
+        grid-row: 2;
+        gap: 0rem;
+        .texto1 {
+            width: 9.875rem;
+            h1{
+                font-size: 2.25rem;
+                span{
+                    img{ 
+                        position: relative;
+                        bottom: 1.125rem;
+                        height: .9375rem;
+                        padding-bottom: 0rem;
+                        padding-left: .1875rem;
+                    }
+                }
+            }
+        }
+        .boton{
+            width: 10rem; 
+            right:0px;
+            a{
+                font-size: 1rem;
+                padding: .3125rem 1.5625rem;
+            }
+        }
+    }
+
+    .section2-index{
+        height: 90vh;
+        p{
+            font-size: 1.5625rem;
+            width: 15.625rem;
+            height: 6.5625rem;
+            letter-spacing: -0.0625rem;
+            top: 11rem;
+        }
+    }
+
+    .section3-index{
+        h2{
+            font-size: 1.125rem;
+        }
+        .contenedorForm{
+            padding: 1.5625rem 2.75rem;
+            width: 90%;
+            border: solid .0625rem;
+            border-color: white;
+            .formGroup{
+                gap: 1.25rem;
+                input{
+                    font-size: .75rem;
+                    border: solid .0625rem;
+                    border-radius: 1rem;
+                    font-size:1.25rem;
+                }
+            }
+            ::placeholder{
+                font-size: 1.25rem;
+        
+        }
+    }
+}
+
+.botonEnviar{
+    margin: 1.25rem;
+    width: 12.5rem;
+    height: 1.875rem;
+    p{
+        padding: .1875rem;
+        font-size: .875rem
+    }
+}
+
+footer .section1-footer{
+    height: auto;
+    padding:1.5rem;
+    font-size: .875rem;
+    .logo-footer img{
+        height: 1.875rem;
+    }
+    
+    .redes{
+        position: relative;
+        gap: .125rem;
+        
+        img{
+            height: 1.25rem;
+        }
+        p{
+        display: none;
+        }
+    }
+}
+
+
+footer .section2-footer{
+    p{
+        font-size: .625rem;
+        top: 1.25rem
+    }
+}
+}

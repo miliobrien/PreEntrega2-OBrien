@@ -67,8 +67,8 @@
     p{
         width: 26.625rem;
         height: 14.1875rem;
-       @include texto(600, 3rem, none);
-       letter-spacing: -0.1875rem;
+        @include texto(600, 3rem, none);
+        letter-spacing: -0.1875rem;
     }
 }
 

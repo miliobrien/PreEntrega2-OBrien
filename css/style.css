@@ -325,7 +325,6 @@ header {
 }
 .section1-about .texto-section1-about p {
   width: 39.4375rem;
-  height: 14.5625rem;
   font-weight: 300;
   font-size: 2rem;
 }
@@ -520,12 +519,13 @@ header {
   font-size: 2.25rem;
   color: white;
   text-align: center;
+  padding-top: 0.3125rem;
 }
 
 footer {
   width: 100%;
   height: 15.9375rem;
-  padding: 3rem;
+  padding: 1.5rem;
   font-weight: 500;
   font-size: 1.5rem;
   color: white;
@@ -600,12 +600,13 @@ footer .section2-footer p {
     margin-bottom: 0.625rem;
   }
   /* WORK */
-  .foto {
+  .fotos-work .foto {
     flex-direction: column;
     height: fit-content;
   }
-  .foto img {
-    height: 100%;
+  .fotos-work .foto img {
+    height: 50%;
+    width: 50%;
   }
   /* ABOUT */
   .section1-about {
@@ -613,6 +614,7 @@ footer .section2-footer p {
     display: flex;
     flex-direction: column;
     background-image: url("../assets/about-mq1024.png");
+    text-align: center;
   }
   .section2-about .sofia .fotoPerfil img {
     width: 20rem;
@@ -659,9 +661,118 @@ footer .section2-footer p {
   /* CONTACT */
   .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
     width: 45.625rem;
+    font-size: 1.875rem;
   }
   ::placeholder {
     font-size: 1.875rem;
+  }
+}
+@media (max-width: 768px) {
+  /* INDEX */
+  header {
+    padding: 0.3125rem 2rem;
+  }
+  header .navbar-brand img {
+    height: 3.125rem;
+  }
+  .formGroup input {
+    font-size: 1.75rem;
+  }
+  .section1-footer :first-child img {
+    height: 3.125rem;
+  }
+  /* SERVICES*/
+  .section1-services {
+    padding: 0rem 5rem;
+  }
+  .section1-services h1 {
+    font-size: 2.5rem;
+  }
+  .section1-services .cards h2 {
+    font-size: 3rem;
+  }
+  .section1-services .cards li {
+    font-size: 2rem;
+  }
+  .motionGraphics h2 {
+    color: rgb(22, 0, 109);
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .illustration h2 {
+    color: rgb(248, 98, 63);
+    padding: 0rem 16.0625rem 4rem 3.375rem;
+  }
+  .socialMedia h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  .webDesign h2 {
+    padding: 0rem 16.0625rem 2rem 5.0625rem;
+  }
+  /* WORK*/
+  .section1-work .titulo-work h1 {
+    font-size: 2.5rem;
+  }
+  /* ABOUT*/
+  .section1-about {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+  .section1-about .texto-section1-about h1 {
+    font-size: 3.5rem;
+  }
+  .section1-about .texto-section1-about p {
+    font-size: 1.5rem;
+    width: 31.25rem;
+  }
+  .section1-about .imagen-section1-about img {
+    height: 75%;
+  }
+  .section2-about .sofia {
+    flex-direction: column;
+  }
+  .section2-about .sofia .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  .section2-about .mauge {
+    flex-direction: column;
+  }
+  .section2-about .mauge .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  .section2-about .cami {
+    flex-direction: column;
+  }
+  .section2-about .cami .nombre {
+    justify-content: center;
+    text-align: center;
+  }
+  /* CONTACT*/
+  .section1-contact .texto-section1-contact {
+    gap: 1.875rem;
+  }
+  .section1-contact .texto-section1-contact h1 {
+    font-size: 4.5rem;
+  }
+  .section1-contact .texto-section1-contact p {
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+  .section1-contact .mainContainer .contenedorForm2 .formGroup2 input {
+    width: 31.25rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+  ::placeholder {
+    font-size: 1.5rem;
+  }
+  .botonEnviar2 {
+    width: 13.5rem;
+    height: 2.875rem;
+  }
+  .botonEnviar2 p {
+    font-size: 1.5rem;
   }
 }
 
